@@ -3,7 +3,7 @@
 Do integer math from within the MacOS terminal!
 
 ## Setup
-Clone and run the Makefile using:  
+1. Run the Makefile using:  
 ``make /usr/local/bin/math``  
 
 ## Examples
