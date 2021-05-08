@@ -1,6 +1,6 @@
 if [ -z "$1" ]
 then
-    echo usage removePrefix.command [prefix]
+    echo usage rmpref[prefix]
 else
     echo removing prefix "$1"
     for FILE in *
