@@ -1,6 +1,8 @@
 # terminal-tools
  -  an assortment of tools I made for the macOS terminal
 
+----------------------------
+
 ### math tool
 ## Brief
  - Do integer math from the terminal
@@ -13,19 +15,27 @@
 4. `% math 2 2 2 2 2 2 2 2 2 2 2 2 -mult` returns `4096`
 5. `% math -help` displays valid usage
 
+---------------------------
 ### rmpref tool
 ## Brief
  - Remove a prefix from all files in a directory
 
 ## Examples
 Given a directory 
-` > myDir  `
-`   > MyFile1.txt`
-`   > MyFile2.txt`
-`   > MyFilecool3.txt`
-`% rmpref MyFile`
+```
+myDir
++--MyFile1.txt
++--MyFile2.txt
++--MyFileCool3.txt
+```
+```
+% cd myDir
+% rmpref MyFile
+```
 Outputs:
-` > myDir  `
-`   > 1.txt`
-`   > 2.txt`
-`   > cool3.txt`
+```
+myDir
++--1.txt
++--2.txt
++--Cool3.txt
+```
