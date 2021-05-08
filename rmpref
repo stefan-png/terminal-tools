@@ -1,0 +1,12 @@
+if [ -z "$1" ]
+then
+    echo usage removePrefix.command [prefix]
+else
+    echo removing prefix "$1"
+    for FILE in *
+        do
+            NEW_FILE_NAME=${FILE/"$1"}
+            echo renaming $FILE to $NEW_FILE_NAME
+            mv "$FILE" "$NEW_FILE_NAME"
+    done  
+fi
