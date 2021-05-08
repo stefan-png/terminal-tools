@@ -1,26 +1,31 @@
-# terminalmath
+# terminal-tools
+ -  an assortment of tools I made for the macOS terminal
 
-Do integer math from within the MacOS terminal!
-
-## Setup
-1. Run the Makefile using:  
-``make /usr/local/bin/math``  
+### math tool
+## Brief
+ - Do integer math from the terminal
+ - Specify any amount of integers and one operation, and it will solve it for you!
 
 ## Examples
-1. `math -add 2 12` returns `14`  
-2. `math 10.928374 -sub 3.28374` returns `7`
-2. `math -div 16 -2` returns `-8`
-3. `math 2 2 2 2 2 2 2 2 2 2 2 2 -mult` returns `4096`
+1. `% math -add 2 12` returns `14`  
+2. `% math 10.928374 -sub 3.28374` returns `7`
+3. `% math -div 16 -2` returns `-8`
+4. `% math 2 2 2 2 2 2 2 2 2 2 2 2 -mult` returns `4096`
+5. `% math -help` displays valid usage
 
-### Help
-Type `math -help` for help:  
+### rmpref tool
+## Brief
+ - Remove a prefix from all files in a directory
 
-> Specify any amount of integers as arguments, and one operation argument. If more than one operation is specified, the first one will be chosen.
-eg. math -add 5 4 20
->   
-> Operation Arguments:
->   
-> -add	adds all the numbers together.  
-> -sub	subtracts all the numbers from first number.  
-> -mult	multiplies all the numbers together.  
-> -div	divides all the numbers from first number.  
+## Examples
+Given a directory 
+` > myDir  `
+`   > MyFile1.txt`
+`   > MyFile2.txt`
+`   > MyFilecool3.txt`
+`% rmpref MyFile`
+Outputs:
+` > myDir  `
+`   > 1.txt`
+`   > 2.txt`
+`   > cool3.txt`
